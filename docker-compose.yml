@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  neuroflow:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: neuroflow
+    ports:
+      - "8000:8000"
+    environment:
+      - NF_HOST=0.0.0.0
+      - NF_PORT=8000
+      - NF_CACHE_THRESHOLD=0.92
+      - NF_CACHE_MAX=2048
+      - NF_ALPHA=0.6
+      - NF_EMBED_FALLBACK=true
+      - NF_RERANK_FALLBACK=true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
