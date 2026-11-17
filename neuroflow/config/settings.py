@@ -1,7 +1,7 @@
 """Application configuration with environment variable overrides."""
 
-from dataclasses import dataclass, field
 import os
+from dataclasses import dataclass, field
 
 
 @dataclass(frozen=True)

@@ -1,6 +1,7 @@
 """Unit tests for the BM25 sparse retrieval engine."""
 
 import pytest
+
 from neuroflow.models.schema import DocumentChunk
 from neuroflow.retrieval.bm25 import BM25Index
 

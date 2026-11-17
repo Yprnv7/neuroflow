@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Any
-from pydantic import BaseModel, Field
 from enum import Enum
+from typing import Any
+
+from pydantic import BaseModel, Field
 
 
 class SearchMode(str, Enum):

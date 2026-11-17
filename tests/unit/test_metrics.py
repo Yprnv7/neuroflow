@@ -1,6 +1,7 @@
 """Unit tests for retrieval metrics."""
 
 import pytest
+
 from neuroflow.evals.metrics import RetrievalMetrics
 
 

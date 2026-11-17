@@ -6,12 +6,12 @@ and retrieval quality metrics across a synthetic corpus.
 """
 
 import time
+
 import numpy as np
 
 from neuroflow.core.engine import HybridRAGEngine
-from neuroflow.models.schema import DocumentChunk, QueryRequest, SearchMode
 from neuroflow.evals.metrics import run_evaluation
-
+from neuroflow.models.schema import DocumentChunk, QueryRequest, SearchMode
 
 TOPICS = [
     "distributed consensus and leader election in fault-tolerant replicated state machines",

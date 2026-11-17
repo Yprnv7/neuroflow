@@ -1,7 +1,8 @@
 """Unit tests for the dense vector index."""
 
-import pytest
 import numpy as np
+import pytest
+
 from neuroflow.models.schema import DocumentChunk
 from neuroflow.retrieval.dense import DenseVectorIndex
 

@@ -2,6 +2,7 @@
 
 import numpy as np
 import pytest
+
 from neuroflow.cache.semantic_cache import SemanticCache
 
 

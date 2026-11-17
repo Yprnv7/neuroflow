@@ -105,7 +105,6 @@ class CrossEncoderReranker:
 
             # Proximity: count adjacent pairs of query terms in doc text
             proximity = 0.0
-            q_list = list(q_tokens)
             for i in range(len(d_tokens_list) - 1):
                 if d_tokens_list[i] in q_tokens and d_tokens_list[i + 1] in q_tokens:
                     proximity += 1.0

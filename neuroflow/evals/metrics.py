@@ -15,10 +15,11 @@ through the engine and aggregates metrics with latency percentiles.
 from __future__ import annotations
 
 import math
-import numpy as np
-from typing import Callable
+from collections.abc import Callable
 
-from neuroflow.models.schema import QueryRequest, QueryResponse
+import numpy as np
+
+from neuroflow.models.schema import QueryResponse
 
 
 class RetrievalMetrics:

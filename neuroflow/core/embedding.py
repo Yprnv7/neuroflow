@@ -13,7 +13,9 @@ from __future__ import annotations
 
 import hashlib
 import struct
+
 import numpy as np
+
 from neuroflow.utils.logging import get_logger
 
 logger = get_logger(__name__)

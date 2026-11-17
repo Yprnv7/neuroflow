@@ -18,13 +18,9 @@ from __future__ import annotations
 
 import time
 
+from neuroflow.cache.semantic_cache import SemanticCache
 from neuroflow.config.settings import AppConfig, load_config
 from neuroflow.core.embedding import EmbeddingEngine
-from neuroflow.cache.semantic_cache import SemanticCache
-from neuroflow.retrieval.bm25 import BM25Index
-from neuroflow.retrieval.dense import DenseVectorIndex
-from neuroflow.retrieval.fusion import convex_fusion
-from neuroflow.retrieval.reranker import CrossEncoderReranker
 from neuroflow.models.schema import (
     DocumentChunk,
     QueryRequest,
@@ -32,6 +28,10 @@ from neuroflow.models.schema import (
     RetrievalResult,
     SearchMode,
 )
+from neuroflow.retrieval.bm25 import BM25Index
+from neuroflow.retrieval.dense import DenseVectorIndex
+from neuroflow.retrieval.fusion import convex_fusion
+from neuroflow.retrieval.reranker import CrossEncoderReranker
 from neuroflow.utils.logging import get_logger
 
 logger = get_logger(__name__)

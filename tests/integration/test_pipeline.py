@@ -5,9 +5,8 @@ from fastapi.testclient import TestClient
 
 from neuroflow.api.server import app
 from neuroflow.core.engine import HybridRAGEngine
+from neuroflow.evals.metrics import run_evaluation
 from neuroflow.models.schema import DocumentChunk, QueryRequest, SearchMode
-from neuroflow.evals.metrics import RetrievalMetrics, run_evaluation
-
 
 # ---- Full pipeline tests ----
 
